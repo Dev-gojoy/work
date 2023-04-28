@@ -33,7 +33,7 @@ const Detail = () => {
           <div className="max-w-[512px]">
             <img className="rounded-t-2xl" src={metadata.image} alt="NFT" />
             <ul className="grid grid-cols-4 gap-8 py-8 bg-gray-600 rounded-b-2xl text-center">
-              {metadata.attributes.map((v, i) => {
+              {metadata?.attributes?.map((v, i) => {
                 return (
                   <li key={i} className="mx-4">
                     <div>{v.trait_type}</div>
@@ -47,7 +47,7 @@ const Detail = () => {
             <div className="text-4xl flex items-center">
               <div>{metadata.name}</div>
               <div className="w-8 h-8 rounded-full flex justify-center items-center ml-2 text-white">
-                <AiFillApple size={36} />
+                {/* <AiFillApple size={36} /> */}
                 <img className="rounded-xl" src="images/Bears.png" alt="" />
               </div>
             </div>

@@ -8,7 +8,11 @@ const NftCard = ({ tokenId, metadata, mintedNft }) => {
           Not Minted.
         </div>
       )}
-      <img className="rounded-t-2xl" src={metadata.image} alt={metadata.name} />
+      <img
+        className="rounded-t-2xl"
+        src={metadata?.image}
+        alt={metadata?.name}
+      />
       <div className="mt-4 text-xl font-bold flex items-center px-4 text-gray-300">
         Doosan Bears
         <div className="w-6 h-6 flex justify-center items-center ml-2 ">
