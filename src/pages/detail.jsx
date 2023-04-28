@@ -48,6 +48,7 @@ const Detail = () => {
               <div>{metadata.name}</div>
               <div className="w-8 h-8 rounded-full flex justify-center items-center ml-2 text-white">
                 <AiFillApple size={36} />
+                <img className="rounded-xl" src="images/Bears.png" alt="" />
               </div>
             </div>
             <div className="mt-8 text-2xl">{metadata.description}</div>
